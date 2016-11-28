@@ -32,15 +32,14 @@ public class GoogleTest {
 		
 		@Before
 		public void setUp() throws Exception {
-			System.setProperty("webdriver.chrome.driver", "C:\\selenium-2.53.0\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "settings/chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.get("https://www.google.com.br/");
 		}
 		
 		@Parameterized.Parameters
 		public static Collection entrada(){
-			return Arrays.asList(new Object [][]{ {"Selenium"}});//{"Selenium IDE", "Selenium IDE"}, 
-				//{"Selenium WebDriver", "Selenium WebDriver"}});
+			return Arrays.asList(new Object [][]{ {"Selenium"}, {"Selenium IDE"}, {"Selenium WebDriver"}});
 		}
 		
 		@After
