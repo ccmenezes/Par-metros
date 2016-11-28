@@ -32,7 +32,7 @@ public class GoogleTest {
 		
 		@Before
 		public void setUp() throws Exception {
-			System.setProperty("webdriver.chrome.driver", "settings/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "browser/chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.get("https://www.google.com.br/");
 		}
